@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe – Modern UI</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="back-arrow" id="backArrow" onclick="goBack()">←</div>
+
+<h1><b>Tic-Tac-Toe</b></h1>
+
+<div class="mode-container" id="modeMenu">
+  <div class="mode-btn" onclick="selectMode('pvp')">Player vs Player</div>
+  <div class="mode-btn" onclick="selectMode('ai')">Player vs AI</div>
+</div>
+
+
+<div class="score-container" id="scoreContainer">
+  <div class="score-box">X Score<span id="xScore">0</span></div>
+  <div class="score-box">Draws<span id="drawScore">0</span></div>
+  <div class="score-box">O Score<span id="oScore">0</span></div>
+</div>
+
+
+<div class="status" id="status">Turn: X</div>
+
+
+<div class="board" id="board"></div>
+
+<button onclick="resetGame()" id="resetBtn">Restart</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
